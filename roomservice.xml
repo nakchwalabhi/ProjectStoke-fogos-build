@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-    <remote name="github"
+    <!-- Custom remote to avoid conflict -->
+    <remote name="moto"
             fetch="https://github.com/" />
 
     <!-- DEVICE TREE -->
     <project path="device/motorola/fogos"
              name="Motorola-SM6375-Devs/android_device_motorola_fogos"
-             remote="github"
+             remote="moto"
              revision="main" />
 
     <!-- VENDOR BLOBS -->
     <project path="vendor/motorola/fogos"
              name="Motorola-SM6375-Devs/android_vendor_motorola_fogos"
-             remote="github"
+             remote="moto"
              revision="main" />
 
     <!-- KERNEL SOURCE -->
     <project path="kernel/motorola/sm6375"
              name="LineageOS/android_kernel_motorola_sm6375"
-             remote="github"
+             remote="moto"
              revision="lineage-22.1" />
 
 </manifest>
